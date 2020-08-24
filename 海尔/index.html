@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>摄像头DEMO</title>
+
+<script src='./icbc_client_core.js'></script>
+
+<script>
+
+
+function displayDate(){
+	document.getElementById("demo").innerHTML=Date();
+}
+
+
+function callbackfun(params) {
+	params=JSON.parse(params);
+	var imagebase64 = params.imagebase64;
+		// imagebase64即为图片的base64编码
+
+	window.alert(imagebase64)
+}
+
+
+function qiaojie() {
+
+	var pa = "{'url':'https://channels1.mall.icbc.com.cn/channels/mobile/operation/jifenshangcheng/index.html','title':'积分商城'}";
+
+	ICBCUtilTools.callNative('Native', 'showExternalWebView', pa);
+	ICBCUtilTools.callNative("Native","callNumberKeyBoard",{'sendId':index, 'maxLens':$current.attr('maxlength'), 'showDot':1, 'showComplete':1, 'needEncrypt':encrypt});
+
+}
+
+
+</script>
+</head>
+<body>
+
+<h1>摄像头DEMO</h1>
+<p id="demo">摄像头DEMO</p>
+
+<button type="button" onclick="qiaojie()">摄像头</button>
+
+</body>
+</html>
+
+
+
+
+
