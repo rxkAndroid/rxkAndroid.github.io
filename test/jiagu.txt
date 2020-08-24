@@ -1,0 +1,9 @@
+APIKey： 
+24ab0b11-e5dd-4130-aaf7-c3cc9cea8d07 
+API密钥 ： 
+72722296-7d04-49e3-861d-0523bbe0ed28 
+
+
+已添加策略。
+地址：http://test-masp.sdc.cs.icbc/
+加固策略ID：32 （融e行V1黑名单）
